@@ -1,16 +1,23 @@
 {
   "name": "@wow-cli-dev/core",
   "version": "1.0.1",
-  "description": "> TODO: description",
+  "description": "description",
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
+  "bin": {
+    "wow-cli-dev": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "axios": "^0.22.0"
+    "@wow-cli-dev/utils": "file:../utils",
+    "axios": "^0.22.0",
+    "import-local": "^3.0.3",
+    "npmlog": "^5.0.1",
+    "yargs": "^17.2.1"
   },
   "publishConfig": {
     "access": "public"
